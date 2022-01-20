@@ -1,9 +1,5 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
-    parserOptions: {
-        project: 'tsconfig.json',
-        sourceType: 'module',
-    },
     plugins: ['@typescript-eslint/eslint-plugin'],
     extends: [
         'plugin:@typescript-eslint/recommended',
@@ -34,6 +30,7 @@ module.exports = {
         '@typescript-eslint/no-parameter-properties': 'off',
         'comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/method-signature-style': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
         'eol-last': 2,
         semi: ['error', 'always'],
         quotes: [2, 'single'],
