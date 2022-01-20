@@ -56,7 +56,7 @@ jobs:
             - v1-dependencies-
       - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run: ls -al
-      - run: echo "should run npm publish --access public"
+      - run: npm publish --access public
 
   deploy_docs:
     <<: *defaults
