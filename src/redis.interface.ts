@@ -6,9 +6,10 @@ import {
     RedisClientType,
     RedisModules,
     RedisClientOptions,
+    RedisDefaultModules,
 } from 'redis';
 
-export type Redis = RedisClientType<any, RedisScripts>;
+export type Redis = RedisClientType<RedisDefaultModules, RedisScripts>;
 
 export type RedisClientReadyHandler = (client: Redis) => Promise<void>;
 export type RedisErrorHandler = (error: Error) => Promise<void>;
